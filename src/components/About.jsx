@@ -1,7 +1,15 @@
+import { motion } from 'framer-motion';
+
 export default function About() {
   return (
     <section id="about" className="relative mx-auto max-w-6xl scroll-mt-24 px-6 py-20">
-      <div className="grid items-center gap-10 md:grid-cols-[220px_1fr]">
+      <motion.div
+        initial={{ opacity: 0, y: 24 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.6, ease: 'easeOut' }}
+        className="grid items-center gap-10 md:grid-cols-[220px_1fr]"
+      >
         <div className="mx-auto h-40 w-40 overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-cyan-400/20 via-purple-400/10 to-transparent p-1">
           <div className="flex h-full w-full items-center justify-center rounded-xl bg-slate-900/60 text-5xl">👋</div>
         </div>
@@ -16,7 +24,7 @@ export default function About() {
             with designers and product teams to turn ideas into delightful experiences.
           </p>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
