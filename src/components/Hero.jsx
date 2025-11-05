@@ -7,14 +7,14 @@ export default function Hero() {
       {/* 3D Scene */}
       <div className="absolute inset-0">
         <Spline
-          scene="https://prod.spline.design/4cHQr84zOGAHOehh/scene.splinecode"
+          scene="https://prod.spline.design/VJLoxp84lCdVfdZu/scene.splinecode"
           style={{ width: '100%', height: '100%' }}
         />
       </div>
 
       {/* Aura gradients for depth (don't block interaction) */}
       <div className="pointer-events-none absolute inset-0">
-        <div className="absolute inset-0 bg-[radial-gradient(60%_50%_at_50%_40%,rgba(168,85,247,0.15)_0%,rgba(59,130,246,0.10)_35%,rgba(249,115,22,0.08)_60%,transparent_75%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(60%_50%_at_50%_40%,rgba(59,130,246,0.14)_0%,rgba(168,85,247,0.12)_35%,rgba(34,211,238,0.10)_60%,transparent_75%)]" />
         <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-slate-950 via-slate-950/60 to-transparent" />
       </div>
 
@@ -27,7 +27,7 @@ export default function Hero() {
           className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-cyan-300 backdrop-blur"
         >
           <span className="inline-block h-2 w-2 animate-pulse rounded-full bg-cyan-400" />
-          Building immersive web experiences
+          Tech • Playful • Modern
         </motion.span>
 
         <motion.h1
@@ -36,7 +36,7 @@ export default function Hero() {
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
           className="mt-2 bg-gradient-to-b from-white via-white to-white/70 bg-clip-text text-4xl font-semibold leading-tight text-transparent sm:text-6xl"
         >
-          Futuristic Web Developer
+          Creative Front‑End Engineer
         </motion.h1>
 
         <motion.p
@@ -45,7 +45,7 @@ export default function Hero() {
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
           className="mt-5 max-w-2xl text-balance text-base text-slate-300 sm:text-lg"
         >
-          I design and build performant, accessible apps with React, TypeScript, Tailwind, and delightful interactions.
+          I craft interactive, performant web experiences with React, TypeScript, Tailwind, and tasteful motion. Inspired by playful, modern portfolios.
         </motion.p>
 
         <motion.div
@@ -56,7 +56,7 @@ export default function Hero() {
         >
           <a
             href="#projects"
-            className="relative overflow-hidden rounded-md bg-cyan-500 px-5 py-2.5 text-sm font-medium text-slate-950 shadow-sm transition-colors hover:bg-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-400/60"
+            className="group relative overflow-hidden rounded-md bg-cyan-500 px-5 py-2.5 text-sm font-medium text-slate-950 shadow-sm transition-colors hover:bg-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-400/60"
           >
             <span className="relative z-10">View Projects</span>
             <span className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 [background:radial-gradient(120px_40px_at_var(--x,50%)_120%,rgba(255,255,255,0.5),transparent)] group-hover:opacity-100" />
@@ -66,7 +66,7 @@ export default function Hero() {
             className="group relative rounded-md border border-white/10 bg-white/5 px-5 py-2.5 text-sm text-white/90 transition-colors hover:bg-white/10"
           >
             <span className="relative z-10">Contact</span>
-            <span className="pointer-events-none absolute inset-px rounded-[5px] opacity-0 transition-opacity duration-300 group-hover:opacity-100 [background:linear-gradient(120deg,rgba(34,211,238,0.25),rgba(168,85,247,0.2),rgba(249,115,22,0.2))]" />
+            <span className="pointer-events-none absolute inset-px rounded-[5px] opacity-0 transition-opacity duration-300 group-hover:opacity-100 [background:linear-gradient(120deg,rgba(34,211,238,0.25),rgba(168,85,247,0.2),rgba(59,130,246,0.2))]" />
           </a>
         </motion.div>
       </div>
